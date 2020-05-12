@@ -2,24 +2,24 @@ var express = require("express");
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var cors = require('cors');
 require("dotenv/config");
-var corsOpts = {
-    origin: '*',
+// var cors = require('cors');
+// var corsOpts = {
+//     origin: '*',
   
-    methods: [
-      'GET',
-      'POST',
-      'PATCH',
-      'DELETE'
-    ],
+//     methods: [
+//       'GET',
+//       'POST',
+//       'PATCH',
+//       'DELETE'
+//     ],
   
-    allowedHeaders: [
-      'Content-Type',
-    ],
-  };
+//     allowedHeaders: [
+//       'Content-Type',
+//     ],
+//   };
 
-app.use(cors(corsOpts));
+// app.use(cors(corsOpts));
 app.use(bodyParser.json());
 
 const postRoutes = require('./routes/posts');
