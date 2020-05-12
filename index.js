@@ -19,7 +19,7 @@ require("dotenv/config");
 //     ],
 //   };
 
-app.use(cors(corsOpts));
+// app.use(cors(corsOpts));
 app.use(bodyParser.json());
 
 const postRoutes = require('./routes/posts');
